@@ -1,0 +1,120 @@
+.app-container {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Chat Section */
+.chat-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f9f9f9;
+  text-align: left;
+}
+
+.message {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user-msg {
+  background: #d1e7ff;
+  margin-left: auto;
+}
+
+.bot-msg {
+  background: #e1ffe1;
+  margin-right: auto;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Voice Section */
+.voice-section {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn.start {
+  background: #4caf50;
+  color: white;
+}
+
+.btn.stop {
+  background: #f44336;
+  color: white;
+}
+
+/* Wave animations */
+.wave {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  animation: pulse 1.2s infinite;
+}
+
+.listening-wave {
+  color: red;
+}
+
+.speaking-wave {
+  color: green;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.3; transform: scale(0.95); }
+}
